@@ -1,12 +1,14 @@
 import React from 'react'
+import '../App.css'
 
 const PokemonThumb = ({id, name, image, type}) => {
+  const style = `thumb-container ${type}`
   return (
-    <div className='thumb-container'>
+    <div className='style'>
       <div className='number'>
           <small>#0{id}</small>
       </div>
-      <image src={image} alt={name} />
+      <img src={image} alt={name} />
       <div className='detail-wrapper'>
           <h3>{name}</h3>
           <small>Type: {type}</small>

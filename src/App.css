@@ -1,4 +1,17 @@
 .app-container{
     text-align: center;
     margin: 200px auto;
+    
+}
+
+.all-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    margin: 40px auto;
+    
+}
+.style {
+    box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.3);
+    margin: 10px 10px;
 }

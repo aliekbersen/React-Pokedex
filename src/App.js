@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
-import './App.css';
 import PokemonThumb from './components/PokemonThumb';
+import './App.css'
 
 function App() {
   const [allPokemons, setAllPokemons] = useState([])
@@ -40,12 +40,12 @@ function App() {
             id={pokemon.id}
             name={pokemon.name}
             image={pokemon.sprites.other.dream_world.front_default}
-            types={pokemon.types[0].type.name}
+            type={pokemon.types[0].type.name}
             key={index}
             />
             )}
         </div>
-        <button className="button">Load More</button>
+        <button className="button" onClick={() => getAllPokemons()}>Load More</button>
       </div>
     </div>
   );
