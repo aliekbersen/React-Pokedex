@@ -1,7 +1,18 @@
+
 .app-container{
-    text-align: center;
-    margin: 200px auto;
     
+    text-align: center;
+    font-size: 35px;
+    font-family: sans-serif;
+    
+}
+.app-container h1{
+    font-size: 100px;
+    margin: 200px auto;
+    text-align: center;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.65);
+  
 }
 
 .all-container{
@@ -12,6 +23,22 @@
     
 }
 .style {
-    box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.3);
+    box-shadow: 4px 4px 6px 4px rgba(0,0,0,0.3);
     margin: 10px 10px;
+    width: 500px;
+    background-color:#E0F1FD;
+}
+.style img{
+    width: 200px;
+    height: 200px;
+}
+.number{
+    color: crimson;
+}
+.detail-wrapper{
+    text-transform: capitalize;
+}
+.detail-wrapper h3{
+    color: crimson;
+    background-color: black;
 }
