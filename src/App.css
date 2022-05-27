@@ -42,3 +42,9 @@
     color: crimson;
     background-color: black;
 }
+.detail-wrapper a{
+    text-decoration: none;
+    font-family: italic;
+    font-size: 30px;
+    color: rgb(255, 127, 251);
+}
