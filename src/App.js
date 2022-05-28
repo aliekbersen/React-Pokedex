@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react';
-import { BrowserRouter, Routes, Route } from "react-router-dom"; 
 import PokemonThumb from './components/PokemonThumb';
 import './App.css'
-import { Details } from './components/Details.js';
+
 
 function App() {
   const [allPokemons, setAllPokemons] = useState([])
@@ -36,14 +35,7 @@ function App() {
     <div className="app-container">
       <h1>Pokemon Codex</h1>
       <div className='pokemon-container'>
-      <BrowserRouter>
-        <Routes>
-          
-          <Route path="/products" element={<Details />} />
-          
-        </Routes>
-      </BrowserRouter>
-        <div className="all-container">
+             <div className="all-container">
            {allPokemons.map( (pokemon, index) => 
             <PokemonThumb 
             id={pokemon.id}

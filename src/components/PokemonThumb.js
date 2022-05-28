@@ -1,6 +1,7 @@
 import React from 'react'
 import '../App.css'
 
+
 const PokemonThumb = ({id, name, image, type}) => {
   const style = `thumb-container ${type}`
   return (
@@ -13,7 +14,8 @@ const PokemonThumb = ({id, name, image, type}) => {
           <h3>{name}</h3>
           
           <small>Type: {type}</small><br></br>
-          <a href=''>Details</a>
+        
+        
       </div>
     </div>
   )
